@@ -33,13 +33,13 @@ class Base:
         if list_objs is not None:
             for obj in list_objs:
                 list_dict.append(cls.to_dictionary(obj))
-        with open("{:s}.json".format(cls.__name__), mode='w') as file:
+        with open("{:s}.json".format(cls.__name__), mode="w") as file:
             file.write(cls.to_json_string(list_dict))
 
     @staticmethod
     def from_json_string(json_string):
         """Returns Python obj from a json string representation"""
-        if json_string is None or json_string == '':
+        if json_string is None or json_string == "":
             return []
         return json.loads(json_string)
 
@@ -62,7 +62,7 @@ class Base:
         if os.path.exists(filename) is False:
             return []
 
-        with open(filename, 'r') as f:
+        with open(filename, "r") as f:
             instances = cls.from_json_string(f.read())
 
         for i, d in enumerate(instances):

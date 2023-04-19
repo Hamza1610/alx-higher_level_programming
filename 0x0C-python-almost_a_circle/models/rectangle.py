@@ -77,14 +77,14 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """Print a rectangle using #'s to stdout"""
+        """Print a rectangle using #"s to stdout"""
         if self.__y:
-            print("\n" * self.__y, end='')
+            print("\n" * self.__y, end="")
 
         for i in range(self.__height):
             if self.__x:
-                print(" " * self.__x, end='')
-            print('#' * self.__width)
+                print(" " * self.__x, end="")
+            print("#" * self.__width)
 
     def __str__(self):
         """Prints [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
@@ -106,15 +106,15 @@ class Rectangle(Base):
             self.y = args[4] if 4 < len(args) else self.y
         else:
             for k, v in kwargs.items():
-                if k == 'id':
+                if k == "id":
                     self.id = v
-                if k == 'width':
+                if k == "width":
                     self.width = v
-                if k == 'height':
+                if k == "height":
                     self.height = v
-                if k == 'x':
+                if k == "x":
                     self.x = v
-                if k == 'y':
+                if k == "y":
                     self.y = v
 
     def to_dictionary(self):

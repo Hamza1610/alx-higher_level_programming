@@ -40,7 +40,7 @@ DESCRIPTION
        installed  on  your  system  as
        well.)
 
-       Python's basic power can be ex‐
+       Python"s basic power can be ex‐
        tended  with  your  own modules
        written in C or C++.   On  most
        systems such modules may be dy‐
@@ -56,7 +56,7 @@ DESCRIPTION
        program.
 
 COMMAND LINE OPTIONS
-       -B     Don't  write  .pyc files
+       -B     Don"t  write  .pyc files
               on  import.   See   also
               PYTHONDONTWRITEBYTECODE.
 
@@ -116,8 +116,8 @@ COMMAND LINE OPTIONS
               mode.  This also implies
               -E and -s.  In  isolated
               mode  sys.path  contains
-              neither the script's di‐
-              rectory  nor  the user's
+              neither the script"s di‐
+              rectory  nor  the user"s
               site-packages directory.
               All  PYTHON* environment
               variables  are  ignored,
@@ -155,7 +155,7 @@ COMMAND LINE OPTIONS
               suppressed in non-inter‐
               active mode.
 
-       -s     Don't add user site  di‐
+       -s     Don"t add user site  di‐
               rectory to sys.path.
 
        -S     Disable  the  import  of
@@ -350,11 +350,11 @@ COMMAND LINE OPTIONS
               threaded
                       application.
               Typical usage is python3
-              -X importtime -c 'import
-              asyncio'
+              -X importtime -c "import
+              asyncio"
 
                   -X    dev:    enable
-              CPython's   "development
+              CPython"s   "development
               mode", introducing addi‐
               tional runtime
                       checks which are
@@ -451,16 +451,16 @@ INTERPRETER INTERFACE
        If  no  script  name  is given,
        sys.argv[0] is an empty string;
        if -c is used, sys.argv[0] con‐
-       tains the  string  '-c'.   Note
+       tains the  string  "-c".   Note
        that options interpreted by the
        Python interpreter  itself  are
        not placed in sys.argv.
 
        In  interactive  mode, the pri‐
-       mary prompt is `>>>'; the  sec‐
+       mary prompt is `>>>"; the  sec‐
        ond  prompt (which appears when
        a command is not  complete)  is
-       `...'.    The  prompts  can  be
+       `...".    The  prompts  can  be
        changed   by   assignment    to
        sys.ps1 or sys.ps2.  The inter‐
        preter quits when it  reads  an
@@ -543,7 +543,7 @@ ENVIRONMENT VARIABLES
               Augments   the   default
               search  path  for module
               files.   The  format  is
-              the  same as the shell's
+              the  same as the shell"s
               $PATH: one or  more  di‐
               rectory  pathnames sepa‐
               rated by  colons.   Non-
@@ -610,7 +610,7 @@ ENVIRONMENT VARIABLES
               If this is set to a non-
               empty   string   it   is
               equivalent to specifying
-              the -B option (don't try
+              the -B option (don"t try
               to write .pyc files).
 
        PYTHONINSPECT
@@ -639,7 +639,7 @@ ENVIRONMENT VARIABLES
               If this is set to a non-
               empty   string   it   is
               equivalent to specifying
-              the -s option (Don't add
+              the -s option (Don"t add
               the user site  directory
               to sys.path).
 
